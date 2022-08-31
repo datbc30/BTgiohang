@@ -16,7 +16,7 @@ function App() {
               to="/home">Home
               <span className='visually-hidden'>(current)</span></NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className={({isActive})=> isActive ? 'bg-light text-dark nav-link':'nav-link'} to="/about">About</NavLink>
             </li>
             <li className="nav-item">
@@ -27,6 +27,12 @@ function App() {
             </li>
             <li className="nav-item">
               <NavLink className={({isActive})=> isActive ? 'bg-light text-dark nav-link':'nav-link'} to="reactfrom">From</NavLink>
+            </li> */}
+            <li className="nav-item">
+              <NavLink className={({isActive})=> isActive ? 'bg-light text-dark nav-link':'nav-link'} to="frombt">frombt</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className={({isActive})=> isActive ? 'bg-light text-dark nav-link':'nav-link'} to="datve">Đặt Vé Xem Phim</NavLink>
             </li>
             {/* <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -42,7 +48,7 @@ function App() {
           </form>
         </div>
       </nav>
-      <div style={{minHeight:500}}>
+      <div style={{height:"900px"}}>
         <Outlet />
       </div>
       <footer className='bg-dark text-center text-white p-5'>footer</footer>
